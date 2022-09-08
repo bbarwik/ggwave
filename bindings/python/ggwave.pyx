@@ -21,11 +21,11 @@ def free(instance):
 
 def encode(payload, protocolId = 1, volume = 10, instance = None):
     """ Encode payload into an audio waveform.
-        @param {string} payload, the data to be encoded
+        @param {bytes} payload, the data to be encoded
         @return Generated audio waveform bytes representing 16-bit signed integer samples.
     """
 
-    cdef bytes data_bytes = payload.encode()
+    cdef bytes data_bytes = payload
     cdef char* cdata = data_bytes
 
     own = False
