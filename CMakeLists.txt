@@ -48,7 +48,7 @@ option(GGWAVE_SANITIZE_ADDRESS        "ggwave: enable address sanitizer" OFF)
 option(GGWAVE_SANITIZE_UNDEFINED      "ggwave: enable undefined sanitizer" OFF)
 
 option(GGWAVE_SUPPORT_SDL2            "ggwave: support for libSDL2" ${GGWAVE_SUPPORT_SDL2_DEFAULT})
-option(GGWAVE_SUPPORT_PYTHON          "ggwave: support for python" ON)
+option(GGWAVE_SUPPORT_PYTHON          "ggwave: support for python" OFF)
 option(GGWAVE_SUPPORT_SWIFT           "ggwave: support for swift" OFF)
 
 option(GGWAVE_BUILD_TESTS             "ggwave: build examples" ${GGWAVE_STANDALONE})
